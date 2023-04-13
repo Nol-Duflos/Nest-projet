@@ -1,6 +1,24 @@
 
 @media (max-width: 640px) { 
 
+    .navbar {
+        .navigation-navbar {
+            position: fixed;
+            left: -100%;
+            top: 5rem;
+            flex-direction: column;
+            background-color: #fff;
+            width: 100%;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .hamburger {
+            display: block;
+            cursor: pointer;
+        }
+    }
+
     body {
         font-size: 8px;
     }

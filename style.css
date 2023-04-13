@@ -133,6 +133,20 @@ footer {
   width: fit-content;
 }
 
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  border-radius: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #2D2A31;
+}
+
 .btn-navbar {
   display: block;
   background-color: #fff;
@@ -321,6 +335,20 @@ footer {
 
 /* ***** QUERIES ***** */
 @media (max-width: 640px) {
+  .navbar .navigation-navbar {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .navbar .hamburger {
+    display: block;
+    cursor: pointer;
+  }
   body {
     font-size: 8px;
   }
