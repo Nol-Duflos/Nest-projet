@@ -1,0 +1,55 @@
+/* ***** GRILLE CAROUSEL ***** */
+
+.range-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3%;
+}
+
+/* ***** GRILLE ENGAGEMENT ***** */
+
+.range-card-engagement {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3rem;
+}
+
+/* ***** GRILLE GALERIE LANDING ***** */
+
+.galerie-grid {
+    max-width: 1520px;
+    width: 100%;
+    height: auto;
+    margin: 1rem auto;
+    border: 1px $main-black solid;
+    // grid-template-columns: repeat(auto-fit, minmax(1fr));
+
+
+    /* ***** TEMPLATE DE LA GRID***** */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+}
+
+.img-galerie-grande {
+    background-color: $secondary-blue;
+    min-height: 100%;
+    grid-row: span 2;
+}
+
+.img-galerie-small {
+    background-color: $light-green;
+    min-height:12rem;
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.img-galerie-grande1 {
+    grid-column: 1 / 3;
+}
+
+.img-galerie-grande2 {
+    grid-column: 3 / 5;
+    grid-row: 3 / 5;
+}

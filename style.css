@@ -1,0 +1,559 @@
+/* ***** FONTS ***** */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* ***** VARIABLES ***** */
+/* ***** NORMALIZE ***** */
+/* ***** FONT ***** */
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  margin: 0;
+  color: #2D2A31;
+}
+
+p {
+  font-size: 1.4em;
+}
+
+h1, h2 {
+  font-family: "Urbanist", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 5em;
+  color: #fff;
+  margin-bottom: 8rem;
+}
+
+h2 {
+  font-size: 2.8em;
+}
+
+.h2-normalize {
+  margin-bottom: 2rem;
+}
+
+h4 {
+  font-size: 2em;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 1.8em;
+  color: #50B6E2;
+  font-weight: 600;
+}
+
+/* ***** LIST ***** */
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  padding: 0;
+}
+
+a {
+  color: #2D2A31;
+  text-decoration: none;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ***** SECTION ***** */
+.section-normalize {
+  margin: 10px;
+}
+
+.engagements, .slider, .galerie {
+  margin: 4rem 7rem;
+}
+
+.footer-haut, .footer-bas {
+  margin: 0 7rem;
+}
+
+.range-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3%;
+}
+
+footer {
+  margin-top: 12rem;
+}
+
+.footer-bas {
+  /*h4 {
+      font-size: 2em;
+  }*/
+}
+.footer-bas li:not(:first-child) {
+  font-size: 1.4em;
+}
+
+/* ***** COMPONENTS ***** */
+.navbar {
+  display: flex;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 40px;
+}
+.navbar .navigation-navbar {
+  font-size: 1.6em;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .navigation-navbar ul {
+  gap: 20px;
+}
+.navbar .logo-baseline {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.navbar .logo-baseline .baseline {
+  font-size: 1.4rem;
+  font-weight: 500;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.btn-navbar {
+  display: block;
+  background-color: #fff;
+  box-shadow: none;
+  border: 1px solid #2D2A31;
+  /*border-radius: 4px;*/
+}
+.btn-navbar .logo-baseline {
+  font-size: 1.4em;
+}
+
+.btn {
+  box-shadow: none;
+  color: #2D2A31;
+  border-radius: 6px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6em;
+  padding: 0.6em 1em;
+  cursor: pointer;
+}
+
+.range-btn {
+  gap: 0.6rem;
+}
+
+.btn-dropdown, .btn-prix, .btn-localisation {
+  background-color: #fff;
+  border: 1px solid #2D2A31;
+  width: 230px;
+}
+
+.btn-cta {
+  border: none;
+  background-color: #50B6E2;
+}
+
+.btn-cta-secondaire {
+  border: none;
+  background-color: #97DAF8;
+}
+
+.container-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+.container-btn-newsletter {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.container-btn-newsletter input {
+  width: 80%;
+  height: 100%;
+}
+.container-btn-newsletter button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+.input-newsletter {
+  border: 1px solid #2D2A31;
+}
+
+.btn-newsletter {
+  border: none;
+  color: #fff;
+  background-color: #2D2A31;
+}
+
+/*.slider {
+    ul {
+        justify-content: space-between;
+    }
+}*/
+.range-cards {
+  overflow: hidden;
+}
+
+.card {
+  border-radius: 6px;
+  /*line-height: 100%;*/
+  height: -moz-max-content;
+  height: max-content;
+  min-width: 300px;
+}
+.card h4, .card h5, .card p {
+  margin: 0.4rem 0;
+}
+.card .img-thumbnail {
+  max-width: 360px;
+  width: 100%;
+  max-height: 230px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px 6px 0 0;
+}
+.card .details1, .card .details2 {
+  display: flex;
+  gap: 1.3rem;
+}
+.card img {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  height: auto;
+}
+.card .card-body .details2 i::before {
+  font-size: 1.4em;
+  color: #C4CA68;
+  margin-right: 0.4rem;
+}
+
+.card-engagement {
+  text-align: center;
+  border-radius: 6px;
+}
+.card-engagement .img-gris {
+  background-color: #6C757D;
+  width: 100%;
+  height: 20rem;
+}
+
+/*.engagements {
+
+    ul {
+        justify-content: space-between;
+    }
+}*/
+.footer-haut {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+.container-haut {
+  min-width: 10em;
+  max-width: 50em;
+}
+
+.container-reseaux .reseaux {
+  gap: 3em;
+}
+.container-reseaux .reseaux i {
+  font-size: 2.4em;
+}
+
+.ul-footer {
+  flex-direction: column;
+}
+
+.footer-bas {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-bas li {
+  margin-bottom: 0.4rem;
+  line-height: 140%;
+}
+.footer-bas li h4 {
+  margin-top: 0;
+}
+
+.galerie-flex {
+  max-width: 1520px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.galerie-flex li {
+  height: 20rem;
+  flex-grow: 1;
+}
+.galerie-flex li img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+
+/* ***** QUERIES ***** */
+@media (max-width: 640px) {
+  body {
+    font-size: 8px;
+  }
+  p {
+    font-size: 1.6em;
+  }
+  .section-normalize {
+    margin: 6px;
+  }
+  .hero {
+    min-height: 10rem;
+    max-height: 40rem;
+    width: 100%;
+  }
+  .hero .hero-img {
+    margin: 8em 0;
+  }
+  .hero .hero-img .range-btn-filtres {
+    max-width: 100%;
+  }
+  h1 {
+    margin-bottom: 2rem;
+  }
+  .range-btn {
+    flex-direction: column;
+  }
+  .range-btn .btn-dropdown, .range-btn .btn-cta {
+    width: 100%;
+  }
+  .range-btn .btn-prix, .range-btn .btn-localisation {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .navbar {
+    padding: 1rem;
+    /*.navigation-navbar {
+        /*display: none;
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .btn-navbar {
+            display: none;
+        }
+    }*/
+  }
+  .navbar .navigation-navbar {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 0;
+    height: calc(100vh - 4rem);
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    background: var(--navbar-bg-color);
+    transform: translateX(110%);
+    transition: all 0.5s ease-in-out;
+  }
+  .navbar .btn-navbar {
+    overflow: hidden;
+    width: 0;
+    height: calc(100vh - 4rem);
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    background: var(--navbar-bg-color);
+    transform: translateX(110%);
+    transition: all 0.5s ease-in-out;
+  }
+  .engagements, .slider, .galerie {
+    margin: 5rem 1.6rem;
+  }
+  .engagements ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .engagements ul li {
+    gap: 1rem;
+  }
+  .range-cards {
+    cursor: grab;
+    overflow: scroll;
+  }
+  /* ***** GALERIE ***** */
+  .galerie-flex li {
+    height: 10rem;
+  }
+  .galerie-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+  .img-galerie-grande {
+    min-height: 100%;
+    grid-row: span 2;
+  }
+  .img-galerie-grande1 {
+    grid-column: 1/5;
+  }
+  .img-galerie-grande2 {
+    grid-column: 1/5;
+  }
+  .img-galerie-small {
+    background-color: #EDE894;
+    min-height: 12rem;
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  /* ***** FOOTER ***** */
+  footer {
+    margin-top: 5rem;
+  }
+  .footer-haut, .footer-bas {
+    flex-wrap: wrap;
+    margin: 2rem 1.6rem;
+    gap: 1em;
+  }
+  .footer-haut .reseaux li p, .footer-bas .reseaux li p {
+    font-size: 1rem;
+  }
+  .footer-haut ul, .footer-bas ul {
+    min-width: 48%;
+  }
+}
+/* ***** PAGES ***** */
+.hero {
+  background: url("https://images.unsplash.com/photo-1609614896541-fb1e4af91797?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80") no-repeat fixed;
+  background-size: cover;
+  background-position: center;
+  background-origin: border-box;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6C757D;
+}
+.hero .hero-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 8em 0;
+  min-height: 20em;
+  max-height: 80em;
+}
+.hero .range-btn-filtres {
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.5px);
+  -webkit-backdrop-filter: blur(7.5px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  max-width: 100%;
+  padding: 1.2rem;
+  text-align: center;
+  position: relative;
+}
+
+/* ***** ORGANISATION GRILLE GALERIE ***** */
+.galerie {
+  max-height: 90rem;
+}
+.galerie h2 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  text-align: center;
+}
+.galerie .container-galerie {
+  max-width: 50%;
+  height: -moz-min-content;
+  height: min-content;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.galerie .container-galerie img {
+  width: 50%;
+  height: -moz-min-content;
+  height: min-content;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* ***** GRILLES ***** */
+/* ***** GRILLE CAROUSEL ***** */
+.range-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3%;
+}
+
+/* ***** GRILLE ENGAGEMENT ***** */
+.range-card-engagement {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3rem;
+}
+
+/* ***** GRILLE GALERIE LANDING ***** */
+.galerie-grid {
+  max-width: 1520px;
+  width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  border: 1px #2D2A31 solid;
+  /* ***** TEMPLATE DE LA GRID***** */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 1rem;
+}
+
+.img-galerie-grande {
+  background-color: #97DAF8;
+  min-height: 100%;
+  grid-row: span 2;
+}
+
+.img-galerie-small {
+  background-color: #EDE894;
+  min-height: 12rem;
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.img-galerie-grande1 {
+  grid-column: 1/3;
+}
+
+.img-galerie-grande2 {
+  grid-column: 3/5;
+  grid-row: 3/5;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,34 @@
+
+
+.navbar {
+    // position: fixed;
+    display: flex;
+    // width: 100%;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 40px;
+
+    .navigation-navbar {
+        font-size: 1.6em;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ul {
+            gap: 20px;
+        }
+    }
+    .logo-baseline {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        .baseline {
+            font-size: 1.4rem;
+            font-weight: 500;
+            width: fit-content;
+        }
+    }
+}

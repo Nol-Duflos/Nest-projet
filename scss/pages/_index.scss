@@ -1,0 +1,62 @@
+.hero {
+    background: url("https://images.unsplash.com/photo-1609614896541-fb1e4af91797?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80") 
+    no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    background-origin: border-box;
+    // min-height: 50em;
+    // max-height:80rem;
+    width: 100%;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $grey-txt;
+
+    .hero-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 8em 0;
+        min-height: 20em;
+        max-height:80em;
+
+    }
+
+    .range-btn-filtres {
+        border-radius: 6px;
+        background: rgba(255, 255, 255, 0.6);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(7.5px);
+        -webkit-backdrop-filter: blur(7.5px);
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        max-width: 100%;
+        padding: 1.2rem;
+        text-align: center;
+        position: relative;
+    }
+}
+
+/* ***** ORGANISATION GRILLE GALERIE ***** */
+
+.galerie {
+    max-height: 90rem;
+    h2 {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        text-align: center;
+    }
+
+    .container-galerie {
+        max-width: 50%;
+        height: min-content;
+        object-fit: cover;
+        img {
+            width: 50%;
+            height: min-content;
+            object-fit: cover;
+        }
+    }
+}
