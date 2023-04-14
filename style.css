@@ -107,7 +107,6 @@ footer article {
 
 /* ***** COMPONENTS ***** */
 .navbar {
-  position: sticky;
   display: flex;
   top: 0;
   left: 0;
@@ -367,15 +366,14 @@ footer article {
 /* ***** QUERIES ***** */
 @media (max-width: 1100px) {
   /* NAVBAR RESPONSIVE */
-  .navbar {
-    overflow: hidden;
-  }
   .navbar .active {
     transition: -webkit-text-decoration linear 0ms;
     transition: text-decoration linear 0ms;
     transition: text-decoration linear 0ms, -webkit-text-decoration linear 0ms;
+    display: block !important;
   }
   .navbar .links {
+    display: none;
     position: absolute;
     left: 0;
     top: 6rem;
@@ -385,13 +383,19 @@ footer article {
     background-color: #fff;
     width: 100%;
     text-align: center;
-    max-height: 0;
+    z-index: 1;
     transition: max-height 0.3s ease-in-out;
     font-size: 0.8rem;
     gap: 2rem;
   }
   .navbar .links nav ul {
     flex-direction: column;
+  }
+  .navbar .links .btn-navbar {
+    margin: 0 auto;
+  }
+  .navbar .links .style-navbar {
+    padding-bottom: 2rem;
   }
   .navbar .hamburger-btn {
     position: relative;
@@ -407,7 +411,7 @@ footer article {
     margin: 8em 0;
   }
   .hero .hero-img .range-btn-filtres {
-    max-width: 100%;
+    width: 100%;
   }
   .range-btn {
     flex-direction: column;
