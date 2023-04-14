@@ -4,10 +4,9 @@
 
     /* NAVBAR RESPONSIVE */
     .navbar {
-        // overflow: hidden;
-
-        .navbar .active {
-            
+        overflow: hidden;
+        .active {
+            transition: text-decoration linear 0ms;
         }
         .links {
             // display: none;
@@ -21,8 +20,8 @@
             width: 100%;
             text-align: center;
 
-            // max-height: 0px;
-            // overflow: hidden;
+            max-height: 0;
+
             transition: max-height 0.3s ease-in-out;
 
             font-size: 0.8rem;
@@ -35,6 +34,7 @@
         }
 
         .hamburger-btn {
+            position: relative;
             display: block;
             cursor: pointer;
         }
