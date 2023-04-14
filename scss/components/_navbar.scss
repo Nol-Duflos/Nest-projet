@@ -11,13 +11,13 @@
     align-items: center;
     padding: 14px 40px;
 
-    .nav-mobile { /*Ensemble qui vas disparaitre en dessous de 640px*/
+    .links { /*Ensemble qui vas disparaitre en dessous de 640px*/
         display: flex;
         width: 80%;
         justify-content: space-between;
     }
 
-    .navigation-navbar {
+    .style-navbar {
         font-size: 1.6em;
         text-decoration: none;
         display: flex;
@@ -28,7 +28,7 @@
             margin: 0;
         }
     }
-    .logo-baseline {
+    .logo {
         display: flex;
         gap: 20px;
         align-items: center;

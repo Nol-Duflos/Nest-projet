@@ -1,25 +1,60 @@
 
 
-.hamburger {
+.hamburger-btn {
     display: none;
+
+    transition: 0.3s ease transform, 0.3s ease top, 0.3s ease width,
+    0.3s ease right;
+
+    .bar {
+        display: block;
+        width: 29px;
+        height: 3px;
+        border-radius: 3px;
+        margin: 5px auto;
+        // -webkit-transition: all 0.3s ease-in-out;
+        // transition: all 0.3s ease-in-out;
+        background-color: $main-black;
+    }
+    // .bar:first-child {           /*<------ J'ai essayé de changé l'apparence du menu hamburger en croix lorsqu'on clic dessus mais pour ça, il faut le changer en checknox*/
+    //     transform-origin: 0;     /* Pas la priorité du moment*/
+    // }
+    // .bar:last-child {
+    //     margin-bottom: 0;
+    //     transform: 29px;
+    // }
+    // .bar:nth-child(2) {
+    //     right: 0;
+    //     width: 29px;
+    // }
 }
 
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    border-radius: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+// .hamburger-btn:before {
+//     transition: 1.2s cubic-bezier(0, 0.96, 1, 0.02) background-color;
+// }
 
-    background-color: $main-black;
-}
+// .hamburger-btn:checked + .bar:first-child { 
+//     top: -6px;
+//     transform: rotateZ(45deg);
+// }
+
+// .hamburger-btn:checked + .bar:last-child { 
+//     top: 6px;
+//     transform: rotateZ(45deg);
+// }
+
+// .hamburger-btn:checked + .bar:nth-child(2) { 
+//     width: 40px;
+//     top: 0;
+//     right: 13px;
+//     transform: rotateZ(-45deg);
+// }
 
 .btn-navbar {
     display: block;
     background-color: $white;
     border: 1px solid $main-black;
+    max-width: fit-content;
 }
 
 .btn-navbar:hover {
