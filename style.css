@@ -69,12 +69,6 @@ button {
   font-family: "Poppins", sans-serif;
 }
 
-.nav-js {
-  display: flex;
-  width: 80%;
-  justify-content: space-between;
-}
-
 /* ***** SECTION ***** */
 .section-normalize {
   margin: 10px;
@@ -82,10 +76,6 @@ button {
 
 .engagements, .slider, .galerie {
   margin: 4rem 7rem;
-}
-
-.footer-haut, .footer-bas {
-  margin: 0 7rem;
 }
 
 .range-cards {
@@ -96,6 +86,9 @@ button {
 
 footer {
   margin-top: 12rem;
+}
+footer article {
+  margin: 0 7rem;
 }
 
 .footer-bas {
@@ -116,6 +109,11 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 14px 40px;
+}
+.navbar .nav-mobile { /*Ensemble qui vas disparaitre en dessous de 640px*/
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
 }
 .navbar .navigation-navbar {
   font-size: 1.6em;
@@ -356,7 +354,7 @@ footer {
 }
 
 /* ***** QUERIES ***** */
-@media (max-width: 640px) {
+@media (max-width: 1100px) {
   .navbar .navigation-navbar {
     position: fixed;
     left: -100%;
@@ -371,15 +369,6 @@ footer {
     display: block;
     cursor: pointer;
   }
-  body {
-    font-size: 8px;
-  }
-  p {
-    font-size: 1.6em;
-  }
-  .section-normalize {
-    margin: 6px;
-  }
   .hero {
     min-height: 10rem;
     max-height: 40rem;
@@ -391,9 +380,6 @@ footer {
   .hero .hero-img .range-btn-filtres {
     max-width: 100%;
   }
-  h1 {
-    margin-bottom: 2rem;
-  }
   .range-btn {
     flex-direction: column;
   }
@@ -403,6 +389,20 @@ footer {
   .range-btn .btn-prix, .range-btn .btn-localisation {
     width: -moz-fit-content;
     width: fit-content;
+  }
+}
+@media (max-width: 640px) {
+  body {
+    font-size: 8px;
+  }
+  p {
+    font-size: 1.6em;
+  }
+  .section-normalize {
+    margin: 6px;
+  }
+  h1 {
+    margin-bottom: 2rem;
   }
   .navbar {
     padding: 1rem;
@@ -417,6 +417,13 @@ footer {
             display: none;
         }
     }*/
+  }
+  .navbar .nav-mobile {
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    overflow: hidden;
+    transition: all 300ms linear;
   }
   .navbar .nav-js {
     overflow: hidden;

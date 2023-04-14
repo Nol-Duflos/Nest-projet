@@ -73,12 +73,6 @@ button {
     font-family: 'Poppins', sans-serif;
 }
 
-.nav-js {
-    display: flex;
-    width: 80%;
-    justify-content: space-between;
-}
-
 
 /* ***** SECTION ***** */
 
@@ -90,10 +84,6 @@ button {
     margin: 4rem 7rem;
 }
 
-.footer-haut, .footer-bas {
-    margin: 0 7rem;
-}
-
 .range-cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -102,6 +92,9 @@ button {
 
 footer {
     margin-top: 12rem;
+    article {
+        margin: 0 7rem;
+    }
 }
 
 .footer-bas {

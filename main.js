@@ -1,11 +1,12 @@
-const hamburger = document.querySelector(".hamburger");
-const navigationNavbar = document.querySelector(".navigation-navbar");
-const btnNavbar = document.querySelector(".btn-navbar");
+document.querySelector(".navbar .hamburger").addEventListener("click",function(){
+    document.querySelector(".navbar").classList.toggle("active");
+});
 
-hamburger.addEventListener("click", mobileMenu);
 
-function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navigationNavbar.classList.toggle("active");
-    btnNavbar.classList.toggle("active");
-}
+
+
+//Année du copyright
+
+const year = document.querySelector('#current-year');
+
+year.innerHTML = new Date().getFullYear();

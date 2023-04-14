@@ -1,15 +1,21 @@
 
 
 .navbar {
-    // position: fixed;
+    //position: fixed;
     display: flex;
-    // width: 100%;
+    //width: 100%;
     top: 0;
     left: 0;
     background-color: $white;
     justify-content: space-between;
     align-items: center;
     padding: 14px 40px;
+
+    .nav-mobile { /*Ensemble qui vas disparaitre en dessous de 640px*/
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+    }
 
     .navigation-navbar {
         font-size: 1.6em;
