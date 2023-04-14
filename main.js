@@ -9,5 +9,3 @@ function mobileMenu() {
     navigationNavbar.classList.toggle("active");
     btnNavbar.classList.toggle("active");
 }
-
-//Dans la media Query 

@@ -69,6 +69,12 @@ button {
   font-family: "Poppins", sans-serif;
 }
 
+.nav-js {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
 /* ***** SECTION ***** */
 .section-normalize {
   margin: 10px;
@@ -119,7 +125,8 @@ footer {
   align-items: center;
 }
 .navbar .navigation-navbar ul {
-  gap: 20px;
+  gap: 2rem;
+  margin: 0;
 }
 .navbar .logo-baseline {
   display: flex;
@@ -150,12 +157,14 @@ footer {
 .btn-navbar {
   display: block;
   background-color: #fff;
-  box-shadow: none;
   border: 1px solid #2D2A31;
-  /*border-radius: 4px;*/
 }
-.btn-navbar .logo-baseline {
-  font-size: 1.4em;
+
+.btn-navbar:hover {
+  display: block;
+  background-color: #2D2A31;
+  border: 1px solid #2D2A31;
+  color: #fff;
 }
 
 .btn {
@@ -166,6 +175,7 @@ footer {
   font-size: 1.6em;
   padding: 0.6em 1em;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .range-btn {
@@ -186,6 +196,10 @@ footer {
 .btn-cta-secondaire {
   border: none;
   background-color: #97DAF8;
+}
+
+.btn-cta-secondaire:hover {
+  background-color: #50B6E2;
 }
 
 .container-btn {
@@ -239,14 +253,22 @@ footer {
 .card h4, .card h5, .card p {
   margin: 0.4rem 0;
 }
+.card .thumbnail {
+  overflow: hidden;
+}
 .card .img-thumbnail {
-  max-width: 360px;
+  max-width: 30rem;
   width: 100%;
-  max-height: 230px;
+  max-height: 13rem;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 6px 6px 0 0;
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+}
+.card .img-thumbnail:hover { /* IE 9 */ /* Safari 3-8 */
+  transform: scale(1.2);
 }
 .card .details1, .card .details2 {
   display: flex;
@@ -396,8 +418,11 @@ footer {
         }
     }*/
   }
-  .navbar .navigation-navbar {
+  .navbar .nav-js {
     overflow: hidden;
+    flex-direction: column;
+  }
+  .navbar .navigation-navbar {
     display: flex;
     flex-direction: column;
     width: 0;
@@ -410,7 +435,6 @@ footer {
     transition: all 0.5s ease-in-out;
   }
   .navbar .btn-navbar {
-    overflow: hidden;
     width: 0;
     height: calc(100vh - 4rem);
     position: absolute;
@@ -419,6 +443,9 @@ footer {
     background: var(--navbar-bg-color);
     transform: translateX(110%);
     transition: all 0.5s ease-in-out;
+  }
+  .img-thumbnail {
+    max-height: 200px;
   }
   .engagements, .slider, .galerie {
     margin: 5rem 1.6rem;

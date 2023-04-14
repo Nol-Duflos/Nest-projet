@@ -61,8 +61,12 @@
     .navbar {
         padding: 1rem;
 
-        .navigation-navbar {
+        .nav-js {
             overflow: hidden;
+            flex-direction: column;
+        }
+
+        .navigation-navbar {
             display:flex;
             flex-direction:column;
             width:0;
@@ -76,7 +80,6 @@
         }
 
         .btn-navbar {
-            overflow: hidden;
             width:0;
             height:calc(100vh - 4rem);  
             position:absolute;
@@ -99,7 +102,9 @@
             }
         }*/
     }
-
+    .img-thumbnail {
+        max-height: 200px;
+    }
     .engagements, .slider, .galerie {
         margin: 5rem 1.6rem;
     }

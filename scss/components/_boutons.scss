@@ -17,12 +17,14 @@
 .btn-navbar {
     display: block;
     background-color: $white;
-    box-shadow: none;
     border: 1px solid $main-black;
-    /*border-radius: 4px;*/
-    .logo-baseline {
-        font-size: 1.4em;
-    }
+}
+
+.btn-navbar:hover {
+    display: block;
+    background-color: $main-black;
+    border: 1px solid $main-black;
+    color: $white;
 }
 
 .btn {
@@ -33,6 +35,8 @@
     font-size: 1.6em;
     padding: 0.6em 1em;
     cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .range-btn {
@@ -51,6 +55,10 @@
 .btn-cta-secondaire {
     border: none;
     background-color: $secondary-blue;
+}
+
+.btn-cta-secondaire:hover {
+    background-color: $main-blue;
 }
 
 .container-btn {
