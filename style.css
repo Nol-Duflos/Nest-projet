@@ -28,7 +28,6 @@ h1, h2 {
 
 h1 {
   font-size: 5em;
-  color: #fff;
   margin-bottom: 8rem;
 }
 
@@ -120,10 +119,6 @@ footer article {
   width: 80%;
   justify-content: space-between;
 }
-.navbar .links .active {
-  -webkit-text-decoration: underline #97DAF8 3px;
-          text-decoration: underline #97DAF8 3px;
-}
 .navbar .style-navbar {
   font-size: 1.6em;
   text-decoration: none;
@@ -145,6 +140,27 @@ footer article {
   font-weight: 500;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.style-navar li {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+}
+.style-navar li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #000;
+  transition: transform 0.2s ease-in-out;
+  transform: scale(0);
+}
+.style-navar li:hover::after {
+  transform: scale(1);
 }
 
 .hamburger-btn {
@@ -199,6 +215,7 @@ footer article {
 .btn-cta {
   border: none;
   background-color: #50B6E2;
+  height: 100%;
 }
 
 .btn-cta-secondaire {
@@ -240,6 +257,15 @@ footer article {
   border: none;
   color: #fff;
   background-color: #2D2A31;
+}
+
+.fa-brands {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.fa-brands:hover {
+  color: #50B6E2;
 }
 
 /*.slider {
@@ -361,6 +387,15 @@ footer article {
   -o-object-fit: cover;
      object-fit: cover;
   cursor: pointer;
+}
+
+.img-galerie-container {
+  opacity: 1;
+  transition: 0.6s ease-in;
+}
+
+.img-galerie-container:hover {
+  opacity: 0.25;
 }
 
 /* ***** QUERIES ***** */
@@ -512,7 +547,7 @@ footer article {
 }
 /* ***** PAGES ***** */
 .hero {
-  background: url("https://images.unsplash.com/photo-1609614896541-fb1e4af91797?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80") no-repeat fixed;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3)), url("https://images.unsplash.com/photo-1609614896541-fb1e4af91797?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80") no-repeat fixed;
   background-size: cover;
   background-position: center;
   background-origin: border-box;

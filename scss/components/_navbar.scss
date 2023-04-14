@@ -1,8 +1,6 @@
 
 
 .navbar {
-    //position: fixed;
-    // position: sticky;
     display: flex;
     //width: 100%;
     top: 0;
@@ -16,9 +14,6 @@
         display: flex;
         width: 80%;
         justify-content: space-between;
-        .active {
-            text-decoration: underline $secondary-blue 3px;
-        }
     }
 
     .style-navbar {
